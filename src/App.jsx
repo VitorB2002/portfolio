@@ -3,6 +3,15 @@ import {Box, Button, Container, Divider, Grid, List, ListItem, Paper, Typography
 import './App.css';
 
 export default function App() {
+  const style_paper = {
+    display:"flex", 
+    flexDirection: "column", 
+    alignItems: "center", 
+    width: "60%", 
+    borderRadius: "20px",
+    marginBottom: "15px"
+  }
+
   return (
     <>
     <Box
@@ -45,15 +54,19 @@ export default function App() {
         />
       </Box>
 
-      <Paper
-        sx={{
-          display:"flex", 
-          flexDirection: "column", 
-          alignItems: "center", 
-          width: "60%", 
-          borderRadius: "25px"
-        }}
-      >
+      <Paper style={style_paper}>
+        <h3>Sobre Mim</h3>
+        <Typography 
+          sx={{
+            textAlign: "justify",
+            padding: "0px 30px 15px 30px"
+          }}
+        >
+          Desenvolvedor apaixonado em tecnologia, venho estudando com o intuito de trabalhar com tecnologia desde o ensino médio, atualmente meus esforços estão voltados para o desenvolvimento fullstack. Estou realizando a graduação em engenharia de software pela UnB e busco oportunidades para aplicar meus conhecimentos, adquirir novas habilidades e trabalhar em equipe.
+        </Typography>
+      </Paper>
+      
+      <Paper style={style_paper}>
         <h3>Conhecimentos</h3>
         <Container sx={{display: "flex", justifyContent: "space-around", gap: "15px"}}>
           <List sx={{width: "200px"}}>
