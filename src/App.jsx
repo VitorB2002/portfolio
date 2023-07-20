@@ -198,8 +198,27 @@ export default function App() {
         </Paper>
 
         <Paper style={style_paper}>
+          <h3>Experiência Profissional</h3>
+          <Container>
+            <b>BTG PACTUAL</b> - <i>ShortJob Automation (Mar/2023 - Julho/2023)</i>
+            <Box sx={{display: "flex", gap: "15px", marginTop: "15px", marginBottom: "15px"}}>
+              <img 
+                src={require("./assets/btg.jpeg")} 
+                alt={"BTG PACTUAL Logo"}
+                width={125}
+                height={'auto'}
+                ></img>
+              <Typography textAlign={'justify'}>
+                Atuei como desenvolvedor fullstack na área de automação do banco, elaborando soluções web para automatizar processos manuais.
+                <br/><b>Conhecimentos aplicados</b>: UX/UI, consumo de API’s, disparo de emails, montagem de documentos pdf em python, banco de dados e endpoints.
+              </Typography>
+            </Box>
+          </Container>
+        </Paper>
+
+        <Paper style={style_paper}>
           <h3>Contato</h3>
-          <Container sx={{display: "flex", flexDirection: "column", gap: "10px"}}>
+          <Container sx={{display: "flex", flexDirection: "column", gap: "10px", marginBottom: "15px"}}>
             <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
               <EmailIcon/>
               Email: vitorb.santos2002@gmail.com
