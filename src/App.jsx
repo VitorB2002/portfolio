@@ -132,7 +132,7 @@ export default function App() {
         
         <Paper style={style_paper}>
           <h3>Conhecimentos</h3>
-          <Container sx={{display: "flex", justifyContent: "space-around", gap: "15px"}}>
+          <Container sx={{display: "flex", justifyContent: "space-around", gap: "15px", marginBottom: "15px"}}>
             <List sx={{width: "200px"}}>
               <ListItem sx={{justifyContent: "space-between"}}>
                 JavaScript
@@ -190,6 +190,37 @@ export default function App() {
                 <img 
                   alt='GIT Logo'
                   src={require("./assets/git-logo.png")} 
+                  width={"20px"} 
+                  height={"20px"}/>
+              </ListItem>
+            </List>
+
+            <List sx={{width: "200px"}}>
+              <ListItem sx={{justifyContent: "space-between"}}>
+                Metodologias Ágeis
+                <img 
+                  alt='Agile Logo'
+                  src={require("./assets/agile.png")} 
+                  width={"20px"} 
+                  height={"20px"}/>
+              </ListItem>
+              <Divider/>
+
+              <ListItem sx={{justifyContent: "space-between"}}>
+                Bancos de dados
+                <img 
+                  alt='Database Logo'
+                  src={require("./assets/database.png")} 
+                  width={"20px"} 
+                  height={"20px"}/>
+              </ListItem>
+              <Divider/>
+
+              <ListItem sx={{justifyContent: "space-between"}}>
+                UX/UI
+                <img 
+                  alt='User Logo'
+                  src={require("./assets/user.png")} 
                   width={"20px"} 
                   height={"20px"}/>
               </ListItem>
