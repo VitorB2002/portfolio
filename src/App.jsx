@@ -231,7 +231,7 @@ export default function App() {
         <Paper style={style_paper}>
           <h3>Experiência Profissional</h3>
           <Container>
-            <b>BTG PACTUAL</b> - <i>ShortJob Automation (Mar/2023 - Julho/2023)</i>
+            <b>BTG PACTUAL</b> - <i>ShortJob Automation</i> | Mar/2023 - Julho/2023
             <Box sx={{display: "flex", gap: "15px", marginTop: "15px", marginBottom: "15px"}}>
               <img 
                 src={require("./assets/btg.jpeg")} 
@@ -244,6 +244,21 @@ export default function App() {
                 <br/><b>Conhecimentos aplicados</b>: UX/UI, consumo de API’s, disparo de emails, montagem de documentos pdf em python, banco de dados e endpoints.
               </Typography>
             </Box>
+          </Container>
+        </Paper>
+
+        <Paper style={style_paper}>
+          <h3>Experiência Acadêmica</h3>
+          <Container marginBottom={"15px"}>
+            <List>
+              <Typography>
+                <b>Universidade de Brasília</b> - Engenharia de Software | 2020.1 - 2024.2 (Previsão)<br/>
+              </Typography>
+                <Divider variant='middle'/>
+              <Typography>
+                <b>Instituto Federal Goiano</b> - Técnico em Automação Industrial | 2017 - 2019
+              </Typography>
+            </List>
           </Container>
         </Paper>
 
