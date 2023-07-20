@@ -4,7 +4,7 @@ import {Box, Button, Container, Typography} from '@mui/material';
 export default function ProjectBox(props) {
 
   const handleClick = () => {
-    console.log(props.link)
+    window.open(props.link, "_blank");
   }
 
   return (
