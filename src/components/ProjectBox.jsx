@@ -10,7 +10,7 @@ export default function ProjectBox(props) {
   return (
     <Container sx={{display: "flex", alignItems: "center", flexDirection: "column"}}>
       <b>{props.nome}</b>
-      <Box sx={{display: "flex", gap: "15px", marginTop: "15px"}}>
+      <Box sx={{display: "flex", gap: "15px", marginTop: "15px", marginBottom: "15px"}}>
         <img 
           src={props.imagem} 
           alt={props.nome + " imagem"}
