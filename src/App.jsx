@@ -1,7 +1,11 @@
 import * as React from 'react';
-import {Box, Button, Container, Divider, Grid, List, ListItem, Paper, Typography} from '@mui/material';
+import {Box, Container, Divider, List, ListItem, Paper, Typography} from '@mui/material';
 import './App.css';
 import ProjectBox from './components/ProjectBox';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function App() {
   const style_paper = {
@@ -185,7 +189,32 @@ export default function App() {
               </ListItem>
             </List>
           </Container>
-          
+        </Paper>
+
+        <Paper style={style_paper}>
+          <h3>Contato</h3>
+          <Container sx={{display: "flex", flexDirection: "column", gap: "10px"}}>
+            <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
+              <EmailIcon/>
+              Email: vitorb.santos2002@gmail.com
+            </Box>
+            <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
+              <PhoneIcon/>
+              Telefone: (61) 99215-1043
+            </Box>
+            <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
+              <GitHubIcon/>
+              GitHub: <a href='https://github.com/VitorB2002' target='_blank'>https://github.com/VitorB2002</a>
+            </Box>
+            <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
+              <LinkedInIcon/>
+              Linkedin: <a href='https://github.com/VitorB2002' target='_blank'>https://www.linkedin.com/in/vitor-borges-dos-santos-ba1046170/</a>
+            </Box>
+          </Container>
+
+          <Container sx={{display: "flex", flexDirection: "column", justifyContent: "space-around"}}>
+            
+          </Container>
         </Paper>
       </Container>
     </Box>
