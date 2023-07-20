@@ -137,6 +137,7 @@ export default function App() {
               <ListItem sx={{justifyContent: "space-between"}}>
                 JavaScript
                 <img 
+                  alt='Javascript Logo'
                   src={require("./assets/javascript-logo.png")} 
                   width={"20px"} 
                   height={"20px"}/>
@@ -146,6 +147,7 @@ export default function App() {
               <ListItem sx={{justifyContent: "space-between"}}>
                 Python
                 <img 
+                  alt='Python Logo'
                   src={require("./assets/python-logo.png")} 
                   width={"20px"} 
                   height={"20px"}/>
@@ -155,6 +157,7 @@ export default function App() {
               <ListItem sx={{justifyContent: "space-between"}}>
                 React
                 <img 
+                  alt='React Logo'
                   src={require("./assets/react-logo.png")} 
                   width={"20px"} 
                   height={"20px"}/>
@@ -165,6 +168,7 @@ export default function App() {
               <ListItem sx={{justifyContent: "space-between"}}>
                 HTML
                 <img 
+                  alt='HTML Logo'
                   src={require("./assets/html-logo.png")} 
                   width={"20px"} 
                   height={"20px"}/>
@@ -174,6 +178,7 @@ export default function App() {
               <ListItem sx={{justifyContent: "space-between"}}>
                 CSS
                 <img 
+                  alt='CSS Logo'
                   src={require("./assets/css-logo.png")} 
                   width={"20px"} 
                   height={"20px"}/>
@@ -183,6 +188,7 @@ export default function App() {
               <ListItem sx={{justifyContent: "space-between"}}>
                 GIT
                 <img 
+                  alt='GIT Logo'
                   src={require("./assets/git-logo.png")} 
                   width={"20px"} 
                   height={"20px"}/>
@@ -204,16 +210,12 @@ export default function App() {
             </Box>
             <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
               <GitHubIcon/>
-              GitHub: <a href='https://github.com/VitorB2002' target='_blank'>https://github.com/VitorB2002</a>
+              GitHub: <a href='https://github.com/VitorB2002' target='_blank' rel='noreferrer'>https://github.com/VitorB2002</a>
             </Box>
             <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
               <LinkedInIcon/>
-              Linkedin: <a href='https://github.com/VitorB2002' target='_blank'>https://www.linkedin.com/in/vitor-borges-dos-santos-ba1046170/</a>
+              Linkedin: <a href='https://www.linkedin.com/in/vitor-borges-dos-santos-ba1046170/' target='_blank' rel='noreferrer'>https://www.linkedin.com/in/vitor-borges-dos-santos-ba1046170/</a>
             </Box>
-          </Container>
-
-          <Container sx={{display: "flex", flexDirection: "column", justifyContent: "space-around"}}>
-            
           </Container>
         </Paper>
       </Container>
