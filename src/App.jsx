@@ -254,7 +254,7 @@ export default function App() {
               <Typography>
                 <b>Universidade de Brasília</b> - Engenharia de Software | 2020.1 - 2024.2 (Previsão)<br/>
               </Typography>
-                <Divider variant='middle'/>
+                <Divider/>
               <Typography>
                 <b>Instituto Federal Goiano</b> - Técnico em Automação Industrial | 2017 - 2019
               </Typography>
