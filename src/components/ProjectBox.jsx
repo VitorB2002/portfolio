@@ -12,7 +12,7 @@ export default function ProjectBox(props) {
      
       <Box sx={{
         display: "flex",
-        height: "75px",
+        flexDirection: "column",
         gap: "15px", 
         marginTop: "15px", 
         marginBottom: "15px",
@@ -27,7 +27,11 @@ export default function ProjectBox(props) {
           height={70}
           style={{border: "1px groove gray", borderRadius: "15px",padding: "5px", backgroundColor: "#fff"}}
         />
-        <Typography fontSize={"2em"}>
+        
+        <Typography 
+          fontSize={"1em"} 
+          fontWeight={900}
+        >
           {props.nome}
         </Typography>
       </Box>

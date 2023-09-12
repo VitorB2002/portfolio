@@ -1,11 +1,12 @@
 import * as React from 'react';
-import {Box, Container, Divider, List, ListItem, Paper, Typography} from '@mui/material';
+import {Box, Container, Divider, Grid, List, ListItem, Paper, Typography} from '@mui/material';
 import './App.css';
 import ProjectBox from './components/ProjectBox';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SkillBox from './components/SkillBox';
 
 export default function App() {
   const style_paper = {
@@ -15,6 +16,15 @@ export default function App() {
     width: "85%", 
     borderRadius: "20px",
     marginBottom: "15px"
+  }
+
+  const style_conhecimento = {
+    display: "flex", 
+    justifyContent: "space-between", 
+    width: "150px",
+    alignItems: "center",
+    gap: "10px",
+    padding: "5px"
   }
 
   return (
@@ -132,100 +142,70 @@ export default function App() {
         
         <Paper style={style_paper}>
           <h3>Conhecimentos</h3>
-          <Container sx={{display: "flex", justifyContent: "space-around", gap: "15px", marginBottom: "15px"}}>
-            <List sx={{width: "200px"}}>
-              <ListItem sx={{justifyContent: "space-between"}}>
-                JavaScript
-                <img 
-                  alt='Javascript Logo'
-                  src={require("./assets/javascript-logo.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-              <Divider/>
+          <Grid container sx={{width: "95%", gap: "15px", justifyContent: "center"}}>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="Javascript"
+                url={require("./assets/javascript-logo.png")} 
+              />
+            </Grid>
 
-              <ListItem sx={{justifyContent: "space-between"}}>
-                Python
-                <img 
-                  alt='Python Logo'
-                  src={require("./assets/python-logo.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-              <Divider/>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="React"
+                url={require("./assets/react-logo.png")} 
+              />
+            </Grid>
 
-              <ListItem sx={{justifyContent: "space-between"}}>
-                React
-                <img 
-                  alt='React Logo'
-                  src={require("./assets/react-logo.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-            </List>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="HTML"
+                url={require("./assets/html-logo.png")} 
+              />
+            </Grid>
 
-            <List sx={{width: "200px"}}>
-              <ListItem sx={{justifyContent: "space-between"}}>
-                HTML
-                <img 
-                  alt='HTML Logo'
-                  src={require("./assets/html-logo.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-              <Divider/>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="CSS"
+                url={require("./assets/css-logo.png")} 
+              />
+            </Grid>
 
-              <ListItem sx={{justifyContent: "space-between"}}>
-                CSS
-                <img 
-                  alt='CSS Logo'
-                  src={require("./assets/css-logo.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-              <Divider/>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="Python"
+                url={require("./assets/python-logo.png")} 
+              />
+            </Grid>
 
-              <ListItem sx={{justifyContent: "space-between"}}>
-                GIT
-                <img 
-                  alt='GIT Logo'
-                  src={require("./assets/git-logo.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-            </List>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="GIT"
+                url={require("./assets/git-logo.png")} 
+              />
+            </Grid>
 
-            <List sx={{width: "200px"}}>
-              <ListItem sx={{justifyContent: "space-between"}}>
-                Metodologias Ágeis
-                <img 
-                  alt='Agile Logo'
-                  src={require("./assets/agile.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-              <Divider/>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="Agile"
+                url={require("./assets/agile.png")} 
+              />
+            </Grid>
 
-              <ListItem sx={{justifyContent: "space-between"}}>
-                Bancos de dados
-                <img 
-                  alt='Database Logo'
-                  src={require("./assets/database.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-              <Divider/>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="UX/UI"
+                url={require("./assets/user.png")} 
+              />
+            </Grid>
 
-              <ListItem sx={{justifyContent: "space-between"}}>
-                UX/UI
-                <img 
-                  alt='User Logo'
-                  src={require("./assets/user.png")} 
-                  width={"20px"} 
-                  height={"20px"}/>
-              </ListItem>
-            </List>
-          </Container>
+            <Grid item style={style_conhecimento}>
+              <SkillBox
+                skillname="Bancos de Dados"
+                url={require("./assets/database.png")}
+              />
+            </Grid>
+          </Grid>
         </Paper>
 
         <Paper style={style_paper}>
