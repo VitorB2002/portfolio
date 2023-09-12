@@ -9,18 +9,33 @@ export default function ProjectBox(props) {
 
   return (
     <Container sx={{display: "flex", alignItems: "center", flexDirection: "column"}}>
-      <b>{props.nome}</b>
-      <Box sx={{display: "flex", gap: "15px", marginTop: "15px", marginBottom: "15px"}}>
+     
+      <Box sx={{
+        display: "flex",
+        height: "75px",
+        gap: "15px", 
+        marginTop: "15px", 
+        marginBottom: "15px",
+        alignItems: "center",
+        justifyContent: "center"
+        }}
+      >
         <img 
           src={props.imagem} 
           alt={props.nome + " imagem"}
-          width={250}
-          height={'auto'}
-          ></img>
-        <Typography textAlign={'justify'}>
-          {props.descricao}
+          width={70}
+          height={70}
+          style={{border: "1px groove gray", borderRadius: "15px",padding: "5px", backgroundColor: "#fff"}}
+        />
+        <Typography fontSize={"2em"}>
+          {props.nome}
         </Typography>
       </Box>
+
+      <Typography textAlign={'justify'}>
+          {props.descricao}
+      </Typography>
+
       <Button 
         sx={{marginTop: "15px"}}
         variant='contained' 
