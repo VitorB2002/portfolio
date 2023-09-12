@@ -12,7 +12,7 @@ export default function App() {
     display:"flex", 
     flexDirection: "column", 
     alignItems: "center", 
-    width: "60%", 
+    width: "85%", 
     borderRadius: "20px",
     marginBottom: "15px"
   }
