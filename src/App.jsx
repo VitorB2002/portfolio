@@ -65,7 +65,7 @@ export default function App() {
           <Typography 
             sx={{
               textAlign: "justify",
-              padding: "0px 30px 15px 30px"
+              padding: "0px 30px 25px 30px"
             }}
           >
             Desenvolvedor apaixonado em tecnologia, venho estudando com o intuito de trabalhar com tecnologia desde o ensino médio, atualmente meus esforços estão voltados para o desenvolvimento fullstack. Estou realizando a graduação em engenharia de software pela UnB e busco oportunidades para aplicar meus conhecimentos, adquirir novas habilidades e trabalhar em equipe.
@@ -234,17 +234,18 @@ export default function App() {
 
         <Paper style={style_paper}>
           <h3>Experiência Acadêmica</h3>
-          <Container marginBottom={"15px"}>
-            <List>
+
+          <Box paddingBottom={"10px"}>
+            <List sx={{textAlign: "center"}}>
               <Typography>
-                <b>Universidade de Brasília</b> - Engenharia de Software | 2020.1 - 2024.2 (Previsão)<br/>
+                <b>Universidade de Brasília</b><br/>Engenharia de Software | 2020.1 - 2024.2 (Previsão)<br/>
               </Typography>
                 <Divider/>
               <Typography>
-                <b>Instituto Federal Goiano</b> - Técnico em Automação Industrial | 2017 - 2019
+                <b>Instituto Federal Goiano</b><br/>Técnico em Automação Industrial | 2017 - 2019
               </Typography>
             </List>
-          </Container>
+          </Box>
         </Paper>
 
         <Paper style={style_paper}>
