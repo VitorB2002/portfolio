@@ -28,6 +28,13 @@ export default function App() {
     borderBottom: "1px solid gray"
   }
 
+  const style_contato = {
+    display: "flex",
+    alignItems: "center",
+    gap: "5px",
+    paddingBottom: "10px"
+  }
+
   return (
     <Box
       sx={{
@@ -75,6 +82,15 @@ export default function App() {
         <Paper style={style_paper}>
           <h3>Projetos</h3>
           <List sx={{overflow: "auto", width: "100%", height: "500px"}}>
+            <ListItem>
+              <ProjectBox
+                nome="Comunicação Além do Texto" 
+                descricao="Projeto open source promovido pela BRISA, o mesmo tem o intuito de permitir que toda população seja capaz de acessar e participar ativamente na priorização e sugestão de propostas. Estou responsável pelo estudo, implementação e integração de tecnologias TTS (texto para fala) em aplicações web." 
+                imagem={require('./assets/tts.png')}
+                link="https://residenciaticbrisa.github.io/01_ComunicacaoTexto/"
+              />
+            </ListItem>
+
             <ListItem>
               <ProjectBox
                 nome="MeasureSoftGram" 
@@ -240,7 +256,7 @@ export default function App() {
               <Typography>
                 <b>Universidade de Brasília</b><br/>Engenharia de Software | 2020.1 - 2024.2 (Previsão)<br/>
               </Typography>
-                <Divider/>
+                <Divider sx={{margin: "10px"}}/>
               <Typography>
                 <b>Instituto Federal Goiano</b><br/>Técnico em Automação Industrial | 2017 - 2019
               </Typography>
@@ -250,22 +266,29 @@ export default function App() {
 
         <Paper style={style_paper}>
           <h3>Contato</h3>
-          <Container sx={{display: "flex", flexDirection: "column", gap: "10px", marginBottom: "15px"}}>
-            <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
-              <EmailIcon/>
-              Email: vitorb.santos2002@gmail.com
-            </Box>
-            <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
-              <PhoneIcon/>
-              Telefone: (61) 99215-1043
-            </Box>
-            <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
+          <Container sx={{marginBottom: "15px"}}>
+            <Box style={style_contato}>
               <GitHubIcon/>
-              GitHub: <a href='https://github.com/VitorB2002' target='_blank' rel='noreferrer'>https://github.com/VitorB2002</a>
+              <a href='https://github.com/VitorB2002' target='_blank' rel='noreferrer'>GitHub</a>
             </Box>
-            <Box sx={{display: "flex", alignItems: "center", gap: "5px"}}>
+
+            <Box style={style_contato}>
               <LinkedInIcon/>
-              Linkedin: <a href='https://www.linkedin.com/in/vitor-borges-dos-santos-ba1046170/' target='_blank' rel='noreferrer'>https://www.linkedin.com/in/vitor-borges-dos-santos-ba1046170/</a>
+              <a href='https://www.linkedin.com/in/vitor-borges-dos-santos-ba1046170/' target='_blank' rel='noreferrer'>Linkedin</a>
+            </Box>
+
+            <Box style={style_contato}>
+              <EmailIcon/>
+              <Typography>
+                vitorb.santos2002@gmail.com
+              </Typography>
+            </Box>
+
+            <Box style={style_contato}>
+              <PhoneIcon/>
+              <Typography>
+                (61) 99215-1043
+              </Typography>
             </Box>
           </Container>
         </Paper>
