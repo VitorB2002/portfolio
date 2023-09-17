@@ -24,7 +24,8 @@ export default function App() {
     width: "150px",
     alignItems: "center",
     gap: "10px",
-    padding: "5px"
+    padding: "5px",
+    borderBottom: "1px solid gray"
   }
 
   return (
@@ -142,7 +143,7 @@ export default function App() {
         
         <Paper style={style_paper}>
           <h3>Conhecimentos</h3>
-          <Grid container sx={{width: "95%", gap: "15px", justifyContent: "center"}}>
+          <Grid container sx={{width: "95%", gap: "15px", justifyContent: "center", marginBottom: "25px"}}>
             <Grid item style={style_conhecimento}>
               <SkillBox
                 skillname="Javascript"
@@ -201,7 +202,7 @@ export default function App() {
 
             <Grid item style={style_conhecimento}>
               <SkillBox
-                skillname="Bancos de Dados"
+                skillname="Bancos"
                 url={require("./assets/database.png")}
               />
             </Grid>
