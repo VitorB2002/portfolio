@@ -210,21 +210,25 @@ export default function App() {
 
         <Paper style={style_paper}>
           <h3>Experiência Profissional</h3>
-          <Container>
-            <b>BTG PACTUAL</b> - <i>ShortJob Automation</i> | Mar/2023 - Julho/2023
-            <Box sx={{display: "flex", gap: "15px", marginTop: "15px", marginBottom: "15px"}}>
-              <img 
-                src={require("./assets/btg.jpeg")} 
-                alt={"BTG PACTUAL Logo"}
-                width={125}
-                height={'auto'}
-                ></img>
-              <Typography textAlign={'justify'}>
-                Atuei como desenvolvedor fullstack na área de automação do banco, elaborando soluções web para automatizar processos manuais.
-                <br/><b>Conhecimentos aplicados</b>: UX/UI, consumo de API’s, disparo de emails, montagem de documentos pdf em python, banco de dados e endpoints.
-              </Typography>
-            </Box>
-          </Container>
+          <img 
+            src={require("./assets/btg.jpeg")} 
+            alt={"BTG PACTUAL Logo"}
+            width={125}
+            height={'auto'}
+          />
+          <Typography>
+            <b>BTG PACTUAL</b>
+          </Typography>
+
+          <Typography sx={{textAlign: "center"}}>
+            Cargo: <i>Summer Intern</i> <br/>
+            Período: Mar/2023 - Julho/2023
+          </Typography>
+            
+          <Typography sx={{textAlign: "justify", padding: "25px"}}>
+            Atuei como desenvolvedor fullstack na área de automação do banco, elaborando soluções web para automatizar processos manuais.
+            <br/><b>Conhecimentos aplicados</b>: UX/UI, consumo de API’s, disparo de emails, montagem de documentos pdf em python, banco de dados e endpoints.
+          </Typography>
         </Paper>
 
         <Paper style={style_paper}>
